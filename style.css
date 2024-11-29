@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+}
+.container{
+    width: 20em;
+    margin:20px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--Dark-blue);
+    font-family: "Red Hat Display", sans-serif;
+    /* font-weight: 500; */
+}
+img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.banner{
+    padding: 5px;
+    margin: 15px;
+}
+h2{
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+}
+.annual{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content h4{
+    font-weight: 700;
+}
+.plan img{
+    width:3em;
+}
+.plan a {
+    color: var(--Bright-blue);
+}
+.plan a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--Desaturated-blue);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payment{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    text-align: center;
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 3px 0px var(--Desaturated-blue) ;
+}
+.order{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    margin-bottom: 25px;
+}
+
+.payment:hover{
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+}
+.order:hover{
+    color: var(--Dark-blue);
+}
+
+@media (max-width:340px) {
+    body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .container{
+        width: 20rem;
+        
+    }
+    .plan{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .annual{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .plan img{
+        width:2em;
+    }
+    
+}
